@@ -1,0 +1,7 @@
+@hostname=https://r1292xm2k0.execute-api.us-east-1.amazonaws.com
+@stage=v7
+POST {{hostname}}/{{stage}}/api1
+
+POST {{hostname}}/{{stage}}/api2
+
+POST {{hostname}}/{{stage}}/api3
