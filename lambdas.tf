@@ -89,7 +89,7 @@ data "archive_file" "fn_api1_file" {
       exports.handler = async (event, context) => {
         return {
           statusCode: 200,
-          body: JSON.stringify('init lambda Auth Users')
+          body: JSON.stringify('init lambda API1')
         }
       }
     EOF
@@ -167,7 +167,7 @@ data "archive_file" "fn_api2_file" {
       exports.handler = async (event, context) => {
         return {
           statusCode: 200,
-          body: JSON.stringify('init lambda Metas Globais')
+          body: JSON.stringify('init lambda API2')
         }
       }
     EOF
@@ -208,7 +208,7 @@ resource "aws_iam_role_policy_attachment" "fn_api3_logs" {
 }
 
 resource "aws_iam_policy" "fn_api3_policies" {
-  name        = "fn_metas_setoriais_policies"
+  name        = "fn_api3_policies"
   path        = "/"
   description = "IAM policies for API3 lambda"
 
@@ -244,7 +244,7 @@ data "archive_file" "fn_api3_file" {
       exports.handler = async (event, context) => {
         return {
           statusCode: 200,
-          body: JSON.stringify('init lambda Metas Setoriais')
+          body: JSON.stringify('init lambda API3')
         }
       }
     EOF
