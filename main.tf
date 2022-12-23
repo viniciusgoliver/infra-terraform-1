@@ -15,3 +15,10 @@ provider "aws" {
   profile = "AWSPersonalVINI"
   region  = "us-east-1"
 }
+
+provider "aws" {
+  profile = "AWSPersonalVINI"
+  region  = "us-east-1"
+
+  alias = "us-east-1"
+}
